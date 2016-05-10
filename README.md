@@ -2,7 +2,7 @@
 This PHP Class was created in order to communicate with the new Envato API.
 For more information please take a look into the official [Envato API documentation](https://build.envato.com/api/ "Envato API documentation").
 
-##Installation
+##Setup
 In order to use this class respectively the API you need a **personal token** which can be created [here](https://build.envato.com/create-token/ "Create a token").
 
 ``` php
@@ -15,12 +15,11 @@ $envato = new Envato(ENVATO_TOKEN);
 
 Please replaced <code>ENVATO_TOKEN</code> with your personal credentials.
 
-##Advanced usage
-By default the API returns an object, but with this class you can return an array as well:
 ``` php
-// Update the response type
+// Updating the response type
 $envato->set_response_type('array');
 ```
+By default the API returns an object, but with this class you can return an array as well:
 
 ##Examples
 ``` php
