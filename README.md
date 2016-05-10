@@ -16,25 +16,24 @@ $envato = new Envato(ENVATO_TOKEN);
 Please replaced <code>ENVATO_TOKEN</code> with your personal credentials.
 
 ##Advanced usage
-###Response types
-By default the API returns the response as object, but with this class you can set it to array too:
+By default the API returns an object, but with this class you can return an array as well:
 ``` php
 // Update the response type
 $envato->set_response_type('array');
 ```
 
 ##Examples
-###Receive open tickets
 ``` php
 // Receive all purchases of the buyer
 $purchases = $envato->call('/buyer/list-purchases');
 
-// Receive purchase data by delivering the purchase code
+// Receive purchase data by submitting the purchase code
 $purchase_data = $envato->call('/buyer/purchase?code=XXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXX');
 ```
 
 These are just some examples. The complete list can be found inside the [Envato API documentation](https://build.envato.com/api/ "Envato API documentation").
 
+##Info
 If you don't want to miss an update or say hello, follow me on Twitter: [@flowdee](https://twitter.com/flowdee "@flowdee") :wink:
 ##Credits
-* [Envato API](https://build.envato.com/ "Envato API")
+* [Envato](https://build.envato.com/ "Envato")
