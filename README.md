@@ -13,7 +13,7 @@ require('Envato.php');
 $envato = new Envato(ENVATO_TOKEN);
 ```
 
-Please replaced <code>ENVATO_TOKEN</code> with your personal credentials.
+Please replace <code>ENVATO_TOKEN</code> with your personal credentials.
 
 ``` php
 // Updating the response type
